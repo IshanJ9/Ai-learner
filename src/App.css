@@ -1,0 +1,188 @@
+/* Main container for the popup */
+.popup {
+  width: 320px; /* Set width for the popup */
+  height: auto;
+  padding: 20px;
+  background-color: #f9f9fb; /* Light background color */
+  border-radius: 16px; /* Rounded edges */
+  font-family: Arial, sans-serif;
+  position: relative; /* To position the back button correctly */
+}
+
+/* Title styling */
+h1 {
+  font-size: 1.3em;
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* Grid for the cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 15px; /* Space between cards */
+}
+
+/* Card styling */
+.card {
+  background: #ffffff;
+  border-radius: 12px; /* Rounded card edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  padding: 20px 10px; /* Padding inside each card */
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+}
+
+/* Icon styling */
+.icon {
+  font-size: 30px; /* Icon size */
+  color: #4A90E2; /* Icon color */
+  margin-bottom: 10px;
+}
+
+/* Card title */
+h3 {
+  margin: 10px 0 5px;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Card description */
+p {
+  font-size: 0.85em;
+  color: #666;
+}
+
+.back-text {
+  display: inline-block;
+  font-size: 0.9em;
+  color: #4A90E2; /* Makes it look like a link */
+  cursor: pointer; /* Adds a pointer cursor on hover */
+  margin-bottom: 0px; /* Space below the back text */
+}
+
+.back-text:hover {
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Input container */
+.input-container {
+  margin-top: 20px;
+}
+
+.input-box {
+  width: 94%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  margin-top: -5px;
+  background-color: #e0e0e0;
+}
+
+/* Action buttons (Summarize & Generate Questions) */
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: #3578c3;
+}
+.back-link {
+  font-size: 14px;
+  color: #6200ea; /* Same color as buttons */
+  cursor: pointer;
+  margin-bottom: 16px; /* Add space below the back link */
+  text-align: left; /* Align it to the left */
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.summary-container {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9fb; /* Matches the YouTube video box background */
+  border: 1px solid #ddd; /* Border similar to the YouTube box */
+  border-radius: 16px; /* Soft rounded corners */
+  padding: 20px;
+  width: 320px; /* Same as the YouTube box width */
+  margin: 0px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for elevation */
+  text-align: center;
+  position: relative; /* For positioning internal elements */
+}
+
+/* Title styling */
+.title {
+  font-size: 18px; /* Slightly larger title */
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 14px; /* Smaller and lighter subtitle */
+  color: #666; /* Subtle text color */
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+/* Input box for the message */
+textarea.message-input {
+  width: 100%;
+  height: 80px; /* Consistent height */
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Matches the box style */
+  padding: 10px;
+  font-size: 14px;
+  background-color: #e0e0e0; /* Light gray background */
+  margin-bottom: 16px;
+  resize: none; /* Disable resizing */
+}
+
+/* Button styling for Summarize */
+.summarize-button {
+  width: 100%; /* Full width for consistency */
+  background-color: #4a90e2; /* Matches the button color */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.summarize-button:hover {
+  background-color: #3578c3; /* Slightly darker on hover */
+}
+
+/* Styling for the summary text */
+.summary-text {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 20px;
+  text-align: left;
+}
